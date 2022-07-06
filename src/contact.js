@@ -6,7 +6,7 @@ function loadContactContent(node){
         node.removeChild(node.firstChild);
     }
     //Add new content
-    const img = new Image();
+    const img = new Image(600);
     img.src = contactImg;
     node.appendChild(img);
 }

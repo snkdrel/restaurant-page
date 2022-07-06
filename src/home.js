@@ -1,7 +1,14 @@
-import homeImg from './menu.jpg';
+import homeImg from './home.jpg';
 
 function loadHomeContent(node){
-    console.log(node);
+    // Remove previous children
+    while (node.firstChild) {
+        node.removeChild(node.firstChild);
+    }
+    //Add new content
+    const img = new Image(600);
+    img.src = homeImg;
+    node.appendChild(img);
 }
 
 export default loadHomeContent;
